@@ -67,7 +67,16 @@ pip_install keras
 sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.9.0-cp27-none-linux_x86_64.whl >/dev/null 2>&1
 
 # Others
-apt_install libhdf5-7 htop ncdu
+apt_install libhdf5-7 htop ncdu snap
+
+# NodeJS
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+apt_install nodejs
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+apt_install yarn
+
+curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 printf '*** SETUP FINISHED! ***'
 #####################################################################################
