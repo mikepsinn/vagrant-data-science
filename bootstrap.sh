@@ -67,7 +67,7 @@ pip_install keras
 sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.9.0-cp27-none-linux_x86_64.whl >/dev/null 2>&1
 
 # Others
-apt_install libhdf5-7
+apt_install libhdf5-7 htop ncdu
 
 printf '*** SETUP FINISHED! ***'
 #####################################################################################
